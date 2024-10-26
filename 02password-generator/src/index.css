@@ -1,0 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.copy-btn:hover{
+  background-color: rgb(20, 20, 175);
+}
+
+.container{
+  margin-top:200px;
+}
