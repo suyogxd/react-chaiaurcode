@@ -38,8 +38,8 @@ function App() {
   return (
     <>
       <div className="container w-full max-w-md mx-auto shadow-md
-      rounded-lg px-4 py-4 my-8 text-black-600 bg-gray-600 text-center">
-        <h1 className="text-2xl my-5">Password Generator</h1>
+      rounded-lg px-4 py-4 my-8 bg-gray-800 text-center">
+        <h1 className="text-2xl text-white my-5">Password Generator</h1>
         <div className="flex shadow rounded-lg mb-4">
           <input type="text" value={password}
           className=" outline-none w-full py-1 px-3 rounded-lg"
@@ -54,7 +54,7 @@ function App() {
         </div>
         
         <div className="flex text-sm gap-x-2">
-          <div className="flex items-center gap-x-1">
+          <div className="flex items-center gap-x-1 text-white">
               <input type="range" 
               min={8}
               max={20}
@@ -65,7 +65,7 @@ function App() {
               <label>Length: {length}</label>
           </div>
 
-          <div className="flex items-center gap-x-1">
+          <div className="flex items-center gap-x-1 text-white">
             <input type="checkbox" 
             defaultChecked={numberStatus}
             id="numberInput"
@@ -76,7 +76,7 @@ function App() {
             <label htmlFor="numberInput">Numbers</label>
           </div>
 
-          <div className="flex items-center gap-x-1">
+          <div className="flex items-center gap-x-1 text-white">
             <input type="checkbox" 
             defaultChecked={charStatus}
             id="characterInput"
