@@ -6,6 +6,23 @@
   background-color: rgb(20, 20, 175);
 }
 
+body{
+  background-image: url(./assets/background.jpg);
+  background-repeat:no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.copy-btn{
+  margin-left: -4px;
+  z-index: 1;
+}
+input{
+  z-index:2;
+}
+
 .container{
   margin-top:200px;
+  box-shadow: 5px 5px 5px 5px rgba(0,0,0,0.8);
+  opacity: 95%;
 }
