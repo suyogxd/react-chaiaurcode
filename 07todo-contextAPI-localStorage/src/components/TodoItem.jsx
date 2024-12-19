@@ -3,11 +3,11 @@ import { useTodo } from '../Contexts'
 
 function TodoItem({ todo }) {
     const [isTodoEditable, setIsTodoEditable] = useState(false)
-    const [todoMsg, setTodoMsg] = useState(todo.todo)
+    const [newTodo, setNewTodo] = useState(todo.todo)
     const {updateTodo, deleteTodo, toggleTodo} = useTodo()
 
     const editTodo = () => {
-        updateTodo(todo.id, {...todo, todo: todoMsg})
+        updateTodo(todo.id, {...todo, todo: newTodo})
         setIsTodoEditable(false)
     }
 
@@ -32,8 +32,8 @@ function TodoItem({ todo }) {
                 className={`border outline-none w-full bg-transparent rounded-lg ${
                     isTodoEditable ? "border-black/10 px-2" : "border-transparent"
                 } ${todo.completed ? "line-through" : ""}`}
-                value={todoMsg}
-                onChange={(e) => setTodoMsg(e.target.value)}
+                value={newTodo}
+                onChange={(e) => setNewTodo(e.target.value)}
                 readOnly={!isTodoEditable}
             />
             {/* Edit, Save Button */}
