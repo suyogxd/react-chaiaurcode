@@ -6,7 +6,7 @@ function TodoItem({ todo }) {
     const [newTodo, setNewTodo] = useState(todo.todo)
     const {updateTodo, deleteTodo, toggleTodo} = useTodo()
 
-    const editTodo = () => {
+    const editTodo = () => { // jaba edit button dabxau taba run huney code
         updateTodo(todo.id, {...todo, todo: newTodo})
         setIsTodoEditable(false)
     }
